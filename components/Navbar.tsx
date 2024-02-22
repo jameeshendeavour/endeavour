@@ -27,7 +27,7 @@ const menuItems: MenuItem[] = [
       },
       {
         title: "Aviation",
-        route: "/nspire-ifc-2",
+        route: "/solutions/nspire-ifc-2",
       },
     ],
   },
@@ -49,7 +49,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="flex nav-width items-center justify-center flex-wrap p-6 text-textcolor">
+    <nav className="flex nav-width items-center justify-center flex-wrap p-6 text-textcolor ">
       <div className="flex items-center flex-shrink-0  mr-6 lg:mr-72">
         <Link href="/">
           <Image

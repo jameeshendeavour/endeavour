@@ -28,14 +28,14 @@ const MoreAbout = () => {
 
           <div>
             <Image
-              className='w-full object-contain px-20'
+              className='w-full object-contain rounded-md'
               src="/automotive-exp.jpg"
-              width={1000}
+              width={600}
               height={1000}
               alt='nspire UI'
             />
           </div>
-          <div className='flex flex-col w-full md:w-2/5 px-20'>
+          <div className='flex flex-col w-full md:w-1/2 px-20 '>
             <h1 className='text-[30px]  '> Take control with a device-centric view of the network </h1>
             <p className=' mt-5'>nSpire from Endeavour Technology uses device-based agents to unlock the data that defines the true customer experience and a cloud-native platform to collect, collate and analyse multiple data sources through a single window.</p>
             <button className='bg-secondary hover:bg-warning rounded mt-5 text-white hover:scale-105 transition duration-500 px-4 py-2 w-[200px] '> Download the eBook </button>
