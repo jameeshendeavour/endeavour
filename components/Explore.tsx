@@ -4,7 +4,7 @@ const Explore = () => {
   return (
     <div className='flex flex-row justify-center items-center w-full h-[200px]  mt-10 bg-gradient-to-r from-white from-1% via-gray-100  to-white to-99%'>
       <div className='flex flex-col mr-10'>
-        <h1 className='text-[30px]  '> Explore other Endeavor Technology Solutions </h1>
+        <h1 className='text-[30px]  text-texthead font-semibold'> Explore other Endeavor Technology Solutions </h1>
         <p className=' mt-5'>The clarity to assure customer experience.</p>
       </div>
 

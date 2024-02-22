@@ -16,8 +16,8 @@ const page = () => {
 
       <div className='flex flex-col container max-w-[1200px] items-center justify-center text-textcolor my-10'>
         <div className='flex flex-col items-center justify-center'>
-          <p className='text-4xl font-semibold'>It’s not about the performance.
-            It’s about the experience.</p>
+          <p className='text-4xl font-semibold text-texthead'>It’s not about the performance.
+            It’s about the <span className='text-secondary'>experience</span>.</p>
           <p className='mt-10 text-[20px]'>Passengers expect to be connected when they are in the air – and now expect the same experience in the air that they get on the ground.</p>
           <p className='mt-10 text-[20px]'>But for airlines, providing that level of experience at altitude and at high speeds is challenging. In-flight connectivity experience can best be described as ‘inconsistent’ for passengers: and it varies widely across different airlines, routes, aircraft types, seasons, and service provider.</p>
           <Image src="/nSpire-IFC-website.png" height={800} width={800} alt="nSpireCX" className='rounded-md' />
@@ -33,7 +33,7 @@ const page = () => {
       </div>
 
       <div className='flex flex-col container max-w-[1200px] items-center justify-center  p-10 text-textcolor'>
-        <p className='text-3xl my-5'>Value Areas</p>
+        <p className='text-3xl my-5 text-texthead'>Value Areas</p>
 
         <div className='flex w-full flex-wrap justify-between '>
           {IfcBenefits.map((benefit, index) => (
@@ -51,7 +51,7 @@ const page = () => {
 
 
       <div className='flex flex-col container max-w-[1200px] items-center justify-center p-10 text-textcolor '>
-        <p className='text-3xl my-5 '>How it works</p>
+        <p className='text-4xl my-5 text-texthead font-semibold'>How it works</p>
         <div className='flex flex-col items-start'>
           <p className='text-[20px] text-start'>The aviation industry is moving to a new level of maturity and introducing technologies which promise levels of performance only dreamed of 10 years ago.</p>
           <p className='text-[20px] text-start'>No one can deny the technical challenges or complexity of delivering a broadband connectivity service to passengers. But no one can argue that the service offered has a reputation for inconsistency.</p>

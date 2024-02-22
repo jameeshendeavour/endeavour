@@ -45,7 +45,7 @@ const BenefitCard = ({ icon, title, content, styleclass }: { icon: string, title
           React.createElement(Components[icon], { key: icon })
         }
       </p>
-      <p className='text-xl my-5'>{title}</p>
+      <p className='text-xl my-5 text-texthead font-semibold'>{title}</p>
       <p className='mt-3 '>{content}</p>
     </div>
   )

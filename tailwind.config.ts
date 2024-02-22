@@ -20,7 +20,8 @@ const config: Config = {
         success: '#14532d',
         warning: '#f97316',
         headtext: '#164e63',
-        textcolor: '#3f4c7c'
+        textcolor: '#3f4c7c',
+        texthead: '#1d243c'
       }
     },
 

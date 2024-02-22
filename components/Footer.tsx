@@ -42,7 +42,7 @@ const Footer = () => {
 
 
           <div className="min-w-[200px] h-auto flex flex-col items-start justify-start">
-            <div className="font-bold text-[16px] uppercase">What We Do</div>
+            <div className="font-bold text-[16px] uppercase text-texthead">What We Do</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <span className="text-[15px] ml-[6px]">IoT Connected Vehicles</span>
             </p>
@@ -60,7 +60,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-start justify-start">
-            <div className="font-bold text-[16px] uppercase">Use cases</div>
+            <div className="font-bold text-[16px] uppercase text-texthead">Use cases</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
               <span className="text-[15px] ml-[6px]">Improving Network NPS</span>
             </p>
@@ -72,7 +72,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-start justify-start">
-            <div className="font-bold text-[16px] uppercase">OUR products</div>
+            <div className="font-bold text-[16px] uppercase text-texthead">OUR products</div>
             <p className="flex flex-row items-center my-[15px] cursor-pointer">
 
               <span className="text-[15px] ml-[6px]">nSpire IoT</span>
@@ -84,7 +84,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mb-[20px] text-[15px] text-center ">
+        <div className="mb-[20px] text-[15px] text-center text-texthead">
 
           <p className="px-5 inline align-middle">{" "}&copy; Endeavour Technology 2024 Inc. All rights reserved.</p>
         </div>

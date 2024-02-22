@@ -15,7 +15,7 @@ const page = () => {
 
       <div className='flex flex-row container max-w-[1200px] items-center justify-center text-textcolor my-10'>
         <div className='flex flex-col'>
-          <p className='text-4xl font-semibold'>Delivering a better customer experience</p>
+          <p className='text-4xl font-semibold text-texthead'>Delivering a better customer experience</p>
           <p className='mt-10 text-[20px]'>As people rely more on mobile devices, service expectations rise, putting pressure on Mobile Network Operators (MNOs) to deliver a better customer experience (Cx). Poor cellular coverage and weak signal quality will test customer loyalty, and often go unnoticed with a network-only view until they switch to another provider.</p>
           <p className='mt-10 text-[20px]'>nSpireCx is your early warning system. It helps improve Net Promoter Scores (NPS) by identifying the causes of a negative network experience, highlighting areas for improvement to reduce churn and build closer customer relationships.</p>
           <p className='mt-10 text-[20px]'>Easily installed on any device – smartphone/tablet/CPE, iOS/Android/Linux – nSpireCx combines the device view of the network with device usage data and other data sources to enable actionable intelligence.</p>
@@ -24,7 +24,7 @@ const page = () => {
       </div>
 
       <div className='flex flex-col container max-w-[1200px] items-center justify-center drop-shadow-md bg-white p-10 text-textcolor'>
-        <p className='text-3xl my-5'>Key benefits</p>
+        <p className='text-3xl my-5 text-texthead'>Key benefits</p>
 
         <div className='flex w-full flex-wrap justify-between '>
           {CXBenefits.map((benefit, index) => (
@@ -40,7 +40,7 @@ const page = () => {
       </div>
 
       <div className='flex flex-col container max-w-[1200px] items-center justify-center p-10 text-textcolor'>
-        <p className='text-3xl my-5'>How it works</p>
+        <p className='text-4xl my-5 text-texthead font-semibold'>How it works</p>
         <div className='flex flex-col container max-w-[900px] items-center justify-center p-10 text-textcolor bg-gray-200'>
           <Image
             src="/nspire-diagram.png"

@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className='flex flex-col items-center justify-center bg-gradient-to-b from-gray-100 to-white h-full w-full'>
       <div className='flex flex-col items-center justify-center container max-w-[900px] text-textcolor'>
-        <p className='my-10 text-6xl font-semibold text-center'>Leading the Way with a New View of Networks</p>
+        <p className='my-10 text-6xl font-semibold text-center text-texthead'>Leading the Way with a New View of Networks</p>
         <p className='text-[20px]  text-center'> Our unrivaled device-centric technology unlocks the data that defines the true customer experience </p>
 
         <Image
@@ -22,12 +22,12 @@ const page = () => {
 
         <hr className="h-[2px] my-10 w-full bg-primary border-1"></hr>
 
-        <p className='my-10 text-3xl font-semibold text-center'> On a mission since 2014 </p>
+        <p className='my-10 text-3xl font-semibold text-center text-texthead'> On a mission since 2014 </p>
         <p className='text-[20px]  text-center mb-5'> Since we opened for business in 2014, our customers have grown and use cases flourished as the market caught up with what we do and the value of our solutions became apparent. Through our product portfolio – run from our cloud-based nSpire platform – we have forged trusted partnerships with Communication Service Providers, automotive OEMs and with businesses that depend on IoT to deliver digital solutions. </p>
         <p className='text-[20px]  text-center mb-5'> What they all need is a device and customer view of the network to optimise their connected services. Armed with our insights, and the third-party data we integrate and surface on our platform, clients make service assurance a building block for continual performance improvement and a foundation for market differentiation.  </p>
 
 
-        <p className='my-10 text-3xl font-semibold text-center'> Appetite for innovation </p>
+        <p className='my-10 text-3xl font-semibold text-center text-texthead'> Appetite for innovation </p>
         <p className='text-[20px]  text-center mb-5'> Headquartered in Dublin, we are a global business addressing global challenges for customers in North America, Europe, Middle East and Asia Pacific. What enables Endeavour to operate at the leading edge is the technical prowess of our team. They combine years of experience in IoT, telecoms, analytics and information technology with a search-and-solve work ethic, an appetite to innovate and be one step ahead of the future. </p>
 
 
@@ -36,6 +36,7 @@ const page = () => {
         <ByNumbers />
       </div>
       <div className='flex flex-col items-center  justify-center container max-w-[1000px]'>
+        <p className='mt-10 text-3xl font-semibold text-center text-texthead'> Meet the team </p>
         <div className='flex flex-row align-middle items-center  justify-center text-textcolor'>
           <MemberCard
             width={300}
