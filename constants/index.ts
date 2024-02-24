@@ -84,30 +84,30 @@ export const Projects = [
 
 export const Works = [
   {
-    name: "Automotive",
+    name: "nSpireAuto",
     src: "/automotive.jpg",
-    url: "nspire-auto",
+    url: "solutions/nspire-auto",
     description:
       "Automotive OEMs can proactively manage customer experience via dashboards that identify performance degradation or reactively when alerts draw attention to outages.",
   },
   {
-    name: "Telecom",
+    name: "nSpireCx",
     src: "/telecome.jpg",
-    url: "nspirecx",
+    url: "solutions/nspirecx",
     description:
       "Mobile Network Operators can improve Net Promoter Scores (NPS) with a customer view of the network that will inform performance improvements, help reduce churn and lead to closer customer relationships.",
   },
   {
-    name: "Enterprise IoT",
+    name: "nSpireIoT",
     src: "/enterpriceiot.jpg",
-    url: "nspireiot",
+    url: "solutions/nspireiot",
     description:
       "Service providers can fine-tune performance at the endpoint where IoT devices are located, a business-critical requirement for many sectors – and life critical in the case of emergency services.",
   },
   {
-    name: "Commercial Aviation",
+    name: "nSpireIFC",
     src: "/aviation.png",
-    url: "nspire-ifc-2",
+    url: "solutions/nspire-ifc-2",
     description:
       "Airlines and their in-flight connectivity partners need actionable intelligence around the connectivity experience provided to their passengers. With nSpire, they can ensure they are meeting or exceeding passenger expectations.",
   }

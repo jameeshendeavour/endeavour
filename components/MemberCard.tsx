@@ -13,7 +13,7 @@ const MemberCard = ({ name, imageUrl, position, linkedInUrl, width }: { name: st
         alt={name}
         className='rounded-lg'
       />
-      <p className='mt-5'>{name}</p>
+      <p className='mt-5 text-[20px] font-[500]'>{name}</p>
       <p className='max-w-[300px] text-nowrap my-5 text-[14px]'>{position}</p>
       <Link
         href={linkedInUrl}

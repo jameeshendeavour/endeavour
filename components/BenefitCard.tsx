@@ -38,15 +38,15 @@ const Components = {
 
 const BenefitCard = ({ icon, title, content, styleclass }: { icon: string, title: string, content: string, styleclass: string }) => {
   return (
-    <div className={`flex flex-col h-auto text-center  justify-start items-center   mt-5 rounded p-5 ${styleclass}`}>
+    <div className={`flex flex-col  h-auto text-center  justify-start items-center   mt-5 rounded-md p-5 lg:p-5 ${styleclass}`}>
       <p className='text-2xl text-secondary'>
         {
           // @ts-ignore
           React.createElement(Components[icon], { key: icon })
         }
       </p>
-      <p className='text-xl my-5 text-texthead font-semibold'>{title}</p>
-      <p className='mt-3 '>{content}</p>
+      <p className='text-[18px] leading-[20.7px] tracking-[2px] font-[500] my-5 text-texthead'>{title}</p>
+      <p className='text-[16px]'>{content}</p>
     </div>
   )
 }

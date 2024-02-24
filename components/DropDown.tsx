@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 
 import { MenuItem } from './Navbar';
-
+import { RxCaretDown } from "react-icons/rx";
 interface Props {
   item: MenuItem;
 }
@@ -24,12 +24,12 @@ export default function Dropdown(props: Props) {
 
   return (
     <>
-      <div className="relative block mt-4 lg:inline-block lg:mt-0 ">
+      <div onMouseLeave={() => setIsOpen(false)} className="flex flex-col items-end mt-4 md:inline-block md:mt-0 text-white-200 ml-8 mr-8">
         <button
-          className="block mt-4 lg:inline-block lg:mt-0 text-white-200 ml-8 mr-8"
+          className="block mt-4 lg:inline-block lg:mt-0 text-white-200"
           onClick={toggle}
-          onMouseOver={toggle}
-        >{item.title}</button>
+          onMouseOver={() => setIsOpen(true)}
+        >{item.title} <RxCaretDown className='inline-block' /></button>
         <div className={`absolute top-8 z-30 w-[250px] h-auto flex flex-col py-4 bg-white rounded-md ${transClass}`} >
           {
             menuItems.map((item, index) =>
@@ -37,8 +37,8 @@ export default function Dropdown(props: Props) {
                 key={index}
                 className=" hover:text-secondary text-start px-4 py-1"
                 href={item?.route || ''}
-                onClick={toggle}
-              >{item.title}</Link>
+                onClick={() => setIsOpen(false)}
+              >{item.title} </Link>
             )
           }
         </div>
@@ -48,7 +48,7 @@ export default function Dropdown(props: Props) {
           ?
           <div
             className="fixed top-0 right-0 bottom-0 left-0 z-20 bg-transparent"
-            onClick={toggle}
+            onClick={() => setIsOpen(false)}
           ></div>
           :
           <></>
