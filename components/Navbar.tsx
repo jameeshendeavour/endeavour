@@ -53,8 +53,8 @@ const Navbar = () => {
 
   return (
     <nav className="flex  items-center justify-center flex-wrap py-5 text-textcolor min-h-[115px] md:min-h-[125px]">
-      <div className='flex flex-row container items-center justify-between flex-wrap'>
-        <div className="flex pl-2 md:pl-0">
+      <div className='flex flex-row container max-w-[1200px] items-center justify-between flex-wrap px-3 md:px-10'>
+        <div className="flex ">
           <Link href="/" >
             <Image
               src="/endeavour.png"
