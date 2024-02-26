@@ -7,6 +7,7 @@ import Dropdown from './DropDown';
 import { PiEquals } from "react-icons/pi";
 
 export interface MenuItem {
+  id: string,
   title: string;
   route?: string;
   children?: MenuItem[];
@@ -15,34 +16,42 @@ const menuItems: MenuItem[] = [
 
   {
     title: "Solutions",
+    id: "1",
     children: [
       {
+        id: "11",
         title: "Automotive",
         route: "/solutions/nspire-auto",
       },
       {
+        id: "12",
         title: "Telecommunications",
         route: "/solutions/nspirecx",
       },
       {
+        id: "13",
         title: "Enterprise IoT",
         route: "/solutions/nspireiot",
       },
       {
+        id: "14",
         title: "Aviation",
         route: "/solutions/nspire-ifc-2",
       },
     ],
   },
   {
+    id: "2",
     title: "Why Endeavour?",
     route: "/why-endeavour",
   },
   {
+    id: "3",
     title: "Resources",
     route: "/resources",
   },
   {
+    id: "4",
     title: "About",
     route: "/about",
   },
@@ -92,9 +101,9 @@ const Navbar = () => {
 
             {menuItems.map((item) => {
               return item.hasOwnProperty("children") ? (
-                <Dropdown item={item} />
+                <Dropdown key={item.id} item={item} />
               ) : (
-                <Link className="block mt-4 md:inline-block md:mb-3  mr-5" href={item?.route || ""}>
+                  <Link key={item.id}  className="block mt-4 md:inline-block md:mb-3  mr-5" href={item?.route || ""}>
                   {item.title}
                 </Link>
               );

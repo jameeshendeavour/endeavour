@@ -34,7 +34,7 @@ export default function Dropdown(props: Props) {
           {
             menuItems.map((item, index) =>
               <Link
-                key={index}
+                key={item.id}
                 className=" hover:text-secondary text-start px-4 py-1"
                 href={item?.route || ''}
                 onClick={() => setIsOpen(false)}
