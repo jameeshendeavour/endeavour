@@ -15,7 +15,7 @@ const page = () => {
           className='w-full h-[430px] object-cover'
         />
       </div>
-      <div className='flex flex-row container max-w-[1200px] items-center justify-between flex-wrap px-3 md:px-10'>
+      <div className='flex flex-row container max-w-[1200px] items-center justify-center flex-wrap px-3 md:px-10'>
 
         <div className='flex flex-col w-full h-auto items-center justify-center text-textcolor'>
           <div className='flex flex-col container max-w-[800px] items-center justify-center '>

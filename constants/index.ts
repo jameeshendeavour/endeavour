@@ -399,3 +399,54 @@ export const IoTHowItWorks = [
     content: 'Open APIs and flexible data access methods support smart feeds and easy integration with your gateway and IoT platform. By capturing signal strength and quality measurements at device level and then aggregating the data, we let you dig down into the performance of specific frequency bands and technologies. Data can be collected and collated for further business analysis and market differentiation.'
   },
 ]
+
+export const inputs = [
+  {
+
+    id: 1,
+    name: "email",
+    label: "Email",
+    type: "email",
+    placeholder: "Email",
+    required: true,
+    pattern: "^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$",
+    extra: "",
+    error: "invalid email address!"
+  },
+  {
+
+    id: 2,
+    name: "firstname",
+    label: "First Name",
+    type: "text",
+    placeholder: "First Name",
+    extra: "(only letters, numbers, and underscores)",
+    pattern: "^[A-Za-z0-9]{3,16}$",
+    required: true,
+    error: "username should be 3-16 characters and should't include any special character!"
+  },
+  {
+
+    id: 3,
+    name: "lastname",
+    label: "Last Name",
+    type: "text",
+    placeholder: "Last Name",
+    extra: "(only letters, numbers, and underscores)",
+    pattern: "^[A-Za-z0-9]{3,16}$",
+    required: true,
+    error: "username should be 3-16 characters and should't include any special character!"
+  },
+  {
+
+    id: 4,
+    name: "company",
+    label: "Company Name",
+    type: "text",
+    placeholder: "Company Name",
+    extra: "(only letters, numbers, and underscores)",
+    pattern: "^[A-Za-z0-9]{3,16}$",
+    required: true,
+    error: "username should be 3-16 characters and should't include any special character!"
+  }
+];
