@@ -23,7 +23,7 @@ const page = () => {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5 justify-center items-center w-full'>
           {
             Blogs.map((blog: any) => (
-              <div className=" rounded overflow-hidden shadow-lg bg-[#F9F9F9] hover:drop-shadow-2xl hover:shadow-lg">
+              <div key={blog.url} className="rounded overflow-hidden shadow-lg bg-[#F9F9F9] hover:drop-shadow-2xl hover:shadow-lg">
                 <div className=" flex flex-row">
                   <div className='relative flex flex-1'>
                     <Image
