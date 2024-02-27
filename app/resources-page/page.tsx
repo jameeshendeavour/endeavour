@@ -12,7 +12,7 @@ const page = () => {
       <div className='flex flex-row gap-4 justify-center items-center container max-w-[1200px]'>
         {
           Categories.map((item: any) => (
-            <button className='group/item flex flex-row justify-center hover:justify-between outline outline-2 text-secondary mr-1 py-2 px-3 min-w-[150px] rounded uppercase text-xs transition-[width] duration-[3s] ease-in-out'>
+            <button key={item.id} className='group/item flex flex-row justify-center hover:justify-between outline outline-2 text-secondary mr-1 py-2 px-3 min-w-[150px] rounded uppercase text-xs transition-[width] duration-[3s] ease-in-out'>
               <span className='transition-[width] duration-[3s] ease-in-out'>{item.value}</span>
               <span className='transition-[width] duration-[3s] ease-in-out inline-block group/edit invisible hover:bg-slate-200 group-hover/item:visible mr-2'> <FaCheck /> </span>
             </button>
