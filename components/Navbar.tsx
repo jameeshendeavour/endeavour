@@ -48,7 +48,7 @@ const menuItems: MenuItem[] = [
   {
     id: "3",
     title: "Resources",
-    route: "/resources",
+    route: "/resources-page",
   },
   {
     id: "4",
