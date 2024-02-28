@@ -90,9 +90,11 @@ const Navbar = () => {
               <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
             </svg>
           </button>
-          <button className={`inline-flex items-center bg-transparent ${isOpen ? " hidden" : "block"}  text-secondary font-semibold hover:text-warning py-2 px-4  border-2 border-secondary hover:border-warning rounded-md`}>
-            Contact US
-          </button>
+          <Link href="/contact" >
+            <button className={`inline-flex items-center bg-transparent ${isOpen ? " hidden" : "block"}  text-secondary font-semibold hover:text-warning py-2 px-4  border-2 border-secondary hover:border-warning rounded-md`}>
+              Contact US
+            </button>
+          </Link>
         </div>
         <div
           className={`w-full block flex-grow md:flex md:items-center justify-center   md:w-auto ${isOpen ? "block" : "hidden"}`}
@@ -103,7 +105,7 @@ const Navbar = () => {
               return item.hasOwnProperty("children") ? (
                 <Dropdown key={item.id} item={item} />
               ) : (
-                  <Link key={item.id}  className="block mt-4 md:inline-block md:mb-3  mr-5" href={item?.route || ""}>
+                <Link key={item.id} className="block mt-4 md:inline-block md:mb-3  mr-5" href={item?.route || ""}>
                   {item.title}
                 </Link>
               );
@@ -113,9 +115,11 @@ const Navbar = () => {
 
         </div>
         <div className={` hidden md:block  flex-col items-end  ${isOpen ? "hidden" : "block"}`}>
-          <button className="inline-flex items-center bg-transparent  text-secondary font-semibold hover:text-warning py-2 px-4 border border-secondary hover:border-warning rounded">
-            Contact US
-          </button>
+          <Link href="/contact" >
+            <button className="inline-flex items-center bg-transparent  text-secondary font-semibold hover:text-warning py-2 px-4 border border-secondary hover:border-warning rounded">
+              Contact US
+            </button>
+          </Link>
         </div>
       </div>
 

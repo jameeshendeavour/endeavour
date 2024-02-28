@@ -450,3 +450,38 @@ export const inputs = [
     error: "username should be 3-16 characters and should't include any special character!"
   }
 ];
+
+export const Offices = [
+  {
+    id: 1,
+    country: "Ireland",
+    addLine1: "3rd Floor, Block 3,",
+    addLine2: "Carysfort Avenue,",
+    addLine3: "Blackrock Business Park,",
+    addLine4: "Dublin, Ireland. A94 D5D7"
+  },
+  {
+    id: 2,
+    country: "USA",
+    addLine1: "36 E Main St, Suite 501,",
+    addLine2: "Norristown, PA 19401,",
+    addLine3: "USA",
+    addLine4: ""
+  },
+  {
+    id: 3,
+    country: "Singapore",
+    addLine1: "531A Upper Cross Street,",
+    addLine2: "#04-95 Hong Lim",
+    addLine3: "Complex, Singapore,",
+    addLine4: "051531"
+  },
+  {
+    id: 4,
+    country: "Serbia",
+    addLine1: "Milutina Milankovića 11g,",
+    addLine2: "11070 Belgrade",
+    addLine3: "",
+    addLine4: ""
+  }
+]
