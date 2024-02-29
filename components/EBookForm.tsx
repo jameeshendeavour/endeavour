@@ -3,10 +3,11 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 const FORM_ENDPOINT = 'https://herotofu.com/start';
-
+import emailjs from "@emailjs/browser";
 
 const EBookForm = () => {
   const [focused, setFocusted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleFocus = (e: any) => {
     setFocusted(true);
@@ -29,6 +30,43 @@ const EBookForm = () => {
     company: "",
     agree: 'false'
   })
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        'service_wbrstdv',
+        'template_z5ek7y6',
+        {
+          from_name: `${user.first} ${user.last}`,
+          to_name: "JavaScript Mastery",
+          from_email: user.email,
+          to_email: "sujata@jsmastery.pro",
+          message: user.company,
+        },
+        'Ty7pEGFNTAjdexRNx'
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setUser({
+            email: "",
+            first: "",
+            last: "",
+            company: "",
+            agree: 'false'
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
 
   return (
     <div className="w-full md:max-w-[1000px] mt-10 mb-5">
@@ -51,7 +89,7 @@ const EBookForm = () => {
               Please enter a valid email address
             </span>
           </label>
-          <div className='flex flex-row justify-between gap-2'>
+          <div className='flex flex-row justify-between gap-5 lg:gap-10'>
             <label className="block mb-6 w-full">
               <span className="text-gray-700">First Name</span><span className='text-secondary'>{`*`}</span>
               <input
@@ -119,7 +157,7 @@ const EBookForm = () => {
           <div className="mb-2 mt-10">
             <button
               className="hover:scale-105 transition delay-75  px-10 text-white text-[16px] font-semibold w-auto py-2.5  bg-secondary rounded-sm "
-              onClick={(e) => { e.preventDefault(); console.log(user) }}
+              onClick={handleSubmit}
             >
               Submit
             </button>

@@ -53,10 +53,13 @@ const BlogFilter = () => {
                     <div className="mt-3 ml-5 text-md hover:text-secondary underline font-[500]">
                       <Link href={`${blog.url}`}>{blog.title}</Link>
                     </div>
-                    <div className='flex justify-end items-end mr-5 mt-5'>
-                      <button className='outline outline-2 text-secondary mr-1 py-2 px-3 min-w-[150px] rounded uppercase'>
-                        READ MORE
-                      </button>
+                    <div className='flex justify-end items-end mr-5 my-10'>
+                      <Link href={`${blog.url}`}>
+                        <button className={`group/item flex flex-row justify-center  hover:justify-between outline outline-2 text-secondary mr-1 py-2 px-3 min-w-[150px] rounded uppercase text-xs transition ease-in delay-1000 duration-1000`} >
+                          <span className=''>READ MORE</span>
+                          <span className={`inline-block group/edit invisible group-hover/item:visible mr-0 hover:mr-2`}> <GrLink /> </span>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
