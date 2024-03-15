@@ -3,6 +3,7 @@ import Explore from '@/components/Explore'
 import ReadyToGet from '@/components/ReadyToGet'
 import { Benefits, HowItWorks } from '@/constants'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -14,13 +15,13 @@ const page = () => {
       </div>
       <div className='flex flex-row container max-w-[1200px] items-center justify-between flex-wrap px-3 md:px-10'>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center text-textcolor my-10'>
-          <div className='flex flex-col mx-5 text-left'>
+        <div className='grid grid-cols-1 md:grid-cols-10 justify-center items-center gap-2 text-textcolor my-10'>
+          <div className='flex flex-col text-left col-span-3'>
             <p className='text-[36px] leading-[41.4px] tracking-[-1.1px] font-[500] text-texthead '>A Dynamic View with Data-Driven Insights</p>
             <p className='mt-5 text-[18px]'>As connected car services become a market differentiator for automakers, poor mobile coverage, network congestion and outages pose significant risks to new business models and revenue streams. nSpireAuto mitigates the risks.</p>
             <p className='mt-5 text-[18px]'>On any network, anywhere in the world, our vehicle view is constant, giving you data-driven insights into network performance metrics unobtainable from MNOs (Mobile Network Operators) with their carrier-only perspective.</p>
           </div>
-          <div className='flex flex-col '><Image src="/nspire-auto-ui.png" height={400} width={400} alt="Cube Map" className='w-full rounded-md mt-5' /></div>
+          <div className='col-span-7'><Image src="/nspire-auto-ui.png" height={400} width={400} alt="Cube Map" className='w-full rounded-md mt-5' /></div>
 
         </div>
 
@@ -71,7 +72,7 @@ const page = () => {
             <div className='flex flex-col w-full  py-0 md:py-10 ml-10'>
               <h1 className='text-[24px] leading-[27.6px] tracking-[-0.7px] font-[500] md:text-[36px] md:leading-[41.4px] md:tracking-[-1.1px]   text-texthead'> Get the eBook: How to own the in-car digital experience </h1>
               <p className='text-[16px] mt-5'>Read our guide to unlock the opportunities awaiting OEMs in this rapidly evolving marketplace.</p>
-              <button className='bg-secondary hover:bg-warning rounded mt-5 text-white hover:scale-105 transition duration-500 px-4 py-2 md:py-3 w-[200px] font-bold'> Download the eBook </button>
+              <Link href="/get-the-in-car-digital-experience-ebook" ><button className='bg-secondary hover:bg-warning rounded mt-5 text-white hover:scale-105 transition duration-500 px-4 py-2 md:py-3 w-[200px] font-bold'> Download the eBook </button></Link>
             </div>
           </div>
           <ReadyToGet />

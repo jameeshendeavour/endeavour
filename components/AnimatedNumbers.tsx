@@ -17,7 +17,8 @@ const AnimatedNumbers = ({ target, unit }: { target: number, unit: string }) => 
       return () => clearInterval(intervalId)
     }, 50)
   }, [target])
-  return <div className='font-bold text-5xl text-texthead'>{current}{unit} </div>
+  if (current > target) setCurrent(target)
+  return <div className='font-[500] text-texthead'>{current}{unit} </div>
 }
 
 export default AnimatedNumbers

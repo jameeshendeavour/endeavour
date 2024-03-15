@@ -1,5 +1,6 @@
 import BlogTitle from '@/components/BlogTitle'
 import EBookForm from '@/components/EBookForm'
+import HubSpotForm from '@/components/HubSpotForm'
 import Image from 'next/image'
 import React from 'react'
 
@@ -24,8 +25,8 @@ const page = () => {
         </div>
 
 
-        <div className='flex flex-col justify-normal items-center max-w-[800px] mt-10'>
-          <EBookForm />
+        <div className='flex flex-col justify-normal items-center max-w-[900px] mt-10 w-full'>
+          <HubSpotForm formId='41abcbe0-bc83-4942-851d-25847e8feb60' style='ml-32 w-full' />
         </div>
 
       </div>

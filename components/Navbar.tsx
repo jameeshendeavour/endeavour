@@ -91,8 +91,8 @@ const Navbar = () => {
             </svg>
           </button>
           <Link href="/contact" >
-            <button className={`inline-flex items-center bg-transparent ${isOpen ? " hidden" : "block"}  text-secondary font-semibold hover:text-warning py-2 px-4  border-2 border-secondary hover:border-warning rounded-md`}>
-              Contact US
+            <button className={`inline-flex items-center bg-transparent ${isOpen ? " hidden" : "block"}  text-secondary font-semibold hover:text-warning py-2 px-4 border-2 border-secondary hover:border-warning rounded-md`}>
+              Contact Us
             </button>
           </Link>
         </div>
@@ -116,8 +116,8 @@ const Navbar = () => {
         </div>
         <div className={` hidden md:block  flex-col items-end  ${isOpen ? "hidden" : "block"}`}>
           <Link href="/contact" >
-            <button className="inline-flex items-center bg-transparent  text-secondary font-semibold hover:text-warning py-2 px-4 border border-secondary hover:border-warning rounded">
-              Contact US
+            <button className="inline-flex items-center bg-transparent  text-secondary font-semibold hover:text-warning py-2 px-4 border-2 border-secondary hover:border-warning rounded-md">
+              Contact Us
             </button>
           </Link>
         </div>

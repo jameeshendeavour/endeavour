@@ -1,5 +1,6 @@
 import BlogTitle from '@/components/BlogTitle'
 import EBookForm from '@/components/EBookForm'
+import HubSpotForm from '@/components/HubSpotForm'
 import Image from 'next/image'
 import React from 'react'
 
@@ -22,8 +23,8 @@ const page = () => {
           height={1000}
           alt='nspire UI'
         />
-        <div className='flex flex-col justify-normal items-center max-w-[800px] mt-10'>
-          <EBookForm />
+        <div className="w-full md:max-w-[1000px] mt-10 mb-5">
+          <HubSpotForm formId='110caba4-9e0e-49aa-9106-c6dd0308d524' style='ml-32 w-full' />
         </div>
 
       </div>
