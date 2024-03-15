@@ -13,7 +13,7 @@ const page = () => {
         <p className='text-[48px] md:text-[68px] leading-[55.2px] md:leading-[79.3px] tracking-[-1.4px] md:tracking-[-2.1px] font-[500]'>nSpireAuto</p>
         <p className='text-[18px] md:text-[19px] font-[500] mt-10 mx-5 text-center'>Empowering automotive OEMs with a unique vehicle view of mobile networks</p>
       </div>
-      <div className='flex flex-row container max-w-[1200px] items-center justify-between flex-wrap px-3 md:px-10'>
+      <div className='flex flex-row container max-w-[1400px] items-center justify-between flex-wrap px-3 md:px-10'>
 
         <div className='grid grid-cols-1 md:grid-cols-10 justify-center items-center gap-2 text-textcolor my-10'>
           <div className='flex flex-col text-left col-span-3'>
@@ -57,7 +57,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className='flex flex-col container max-w-[1200px] items-center justify-center p-10 text-textcolor'>
+        <div className='flex flex-col container  max-w-[1400px]  items-center justify-center p-10 text-textcolor'>
           <div className='grid grid-cols-1 md:grid-cols-2 flex-nowrap items-center justify-center h-auto w-full mt-10'>
 
             <div className='flex'>
