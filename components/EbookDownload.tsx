@@ -3,18 +3,18 @@
 
 import React, { useEffect } from 'react'
 
-
 const HSContactForm = () => {
 
   useEffect(() => {
+    
     const script = document.createElement('script');
     script.src = 'https://js.hsforms.net/forms/v2.js';
     document.body.appendChild(script);
 
     script.addEventListener('load', () => {
-      // @TS-ignore
+      // @ts-ignore
       if (window.hbspt) {
-        // @TS-ignore
+        // @ts-ignore
         window.hbspt.forms.create({
           portalId: '26019833',
           formId: '0d9890a0-0e10-4683-b4c1-b4e38be1e484',
