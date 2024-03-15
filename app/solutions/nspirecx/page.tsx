@@ -8,23 +8,23 @@ import React from 'react'
 const page = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
-      <div className="bg-[url('/photo-phone.jpg')]  bg-no-repeat bg-cover bg-center bg-fixed h-[430px] w-full flex flex-col items-center justify-center text-white">
-        <p className='text-[48px] md:text-[68px] leading-[55.2px] md:leading-[79.3px] tracking-[-1.4px] md:tracking-[-2.1px] font-[500] text-texthead'>nSpireCx</p>
+      <div className="bg-[url('/photo-phone.jpg')]  bg-no-repeat bg-cover bg-center bg-fixed h-[430px] w-full flex flex-col items-center justify-center text-white bg-blend-color-dodge">
+        <p className='text-[48px] md:text-[68px] leading-[55.2px] md:leading-[79.3px] tracking-[-1.4px] md:tracking-[-2.1px] font-[500] text-white'>nSpireCx</p>
         <p className='text-[18px] md:text-[19px] font-[500] mt-10 mx-5 text-center max-w-[700px]'>Enabling mobile operators to improve customer experience and satisfaction with a device view of the network</p>
       </div>
       <div className='flex flex-row container max-w-[1400px] items-center justify-between flex-wrap px-3 md:px-10'>
-        <div className='grid grid-cols-1 md:grid-cols-5 justify-center items-center text-textcolor my-10'>
-          <div className='flex flex-col mx-5 text-left col-span-2 px-5'>
+        <div className='grid grid-cols-1 md:grid-cols-3 justify-center items-center text-textcolor my-10'>
+          <div className='flex flex-col mx-5 text-left col-span-1 px-5'>
             <p className='text-[36px] leading-[41.4px] tracking-[-1.1px] font-[500] text-texthead'>Delivering a better customer experience</p>
             <p className='mt-5 text-[18px]'>As people rely more on mobile devices, service expectations rise, putting pressure on Mobile Network Operators (MNOs) to deliver a better customer experience (Cx). Poor cellular coverage and weak signal quality will test customer loyalty, and often go unnoticed with a network-only view until they switch to another provider.</p>
             <p className='mt-5 text-[18px]'>nSpireCx is your early warning system. It helps improve Net Promoter Scores (NPS) by identifying the causes of a negative network experience, highlighting areas for improvement to reduce churn and build closer customer relationships.</p>
             <p className='mt-5 text-[18px]'>Easily installed on any device – smartphone/tablet/CPE, iOS/Android/Linux – nSpireCx combines the device view of the network with device usage data and other data sources to enable actionable intelligence.</p>
           </div>
-          <div className='flex flex-col col-span-3'><Image src="/screen-nspire-cx.png" height={400} width={400} alt="nSpireCX" className='w-full rounded-md mt-5' /></div>
+          <div className='flex flex-col col-span-2'><Image src="/screen-nspire-cx.png" height={400} width={400} alt="nSpireCX" className='w-full rounded-md mt-5' /></div>
         </div>
 
         <div className='flex flex-col lg:container max-w-[1200px] items-center justify-center drop-shadow-sm bg-white p-10 text-textcolor'>
-          <p className='text-[36px] leading-[41.4px] tracking-[-1.1px] font-[500] my-5 text-texthead'>Key benefits</p>
+          <p className='text-[36px] leading-[41.4px] tracking-[-1.1px] font-[500] my-5 text-texthead capitalize'>Key benefits</p>
 
           <div className='flex flex-col md:flex-row w-full flex-wrap justify-between '>
             {CXBenefits.map((benefit, index) => (
@@ -40,8 +40,8 @@ const page = () => {
         </div>
 
         <div className='flex flex-col container max-w-[1200px] items-center justify-center p-10 text-textcolor'>
-          <p className='text-[48px] leading-[55.2px]  tracking-[-1.4px]  font-[500]  text-texthead mb-10'>How it works</p>
-          <div className='flex flex-col container max-w-[900px] items-center justify-center p-10 text-textcolor bg-gray-200'>
+          <p className='text-[48px] leading-[55.2px]  tracking-[-1.4px]  font-[500]  text-texthead mb-10 capitalize'>How it works</p>
+          <div className='flex flex-col container max-w-[900px] items-center justify-center p-10 text-textcolor bg-[#f6f6f9]'>
             <Image
               src="/nspire-diagram.png"
               width={800}
