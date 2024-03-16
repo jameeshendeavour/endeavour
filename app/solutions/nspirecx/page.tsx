@@ -12,7 +12,7 @@ const page = () => {
         <p className='text-[48px] md:text-[68px] leading-[55.2px] md:leading-[79.3px] tracking-[-1.4px] md:tracking-[-2.1px] font-[500] text-white'>nSpireCx</p>
         <p className='text-[18px] md:text-[19px] font-[500] mt-10 mx-5 text-center max-w-[700px]'>Enabling mobile operators to improve customer experience and satisfaction with a device view of the network</p>
       </div>
-      <div className='flex flex-row container max-w-[1400px] items-center justify-between flex-wrap px-3 md:px-10'>
+      <div className='flex flex-row container max-w-[1400px] items-center justify-center flex-wrap px-3 md:px-10'>
         <div className='grid grid-cols-1 md:grid-cols-3 justify-center items-center text-textcolor my-10'>
           <div className='flex flex-col mx-5 text-left col-span-1 px-5'>
             <p className='text-[36px] leading-[41.4px] tracking-[-1.1px] font-[500] text-texthead'>Delivering a better customer experience</p>
